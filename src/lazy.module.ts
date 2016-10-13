@@ -4,7 +4,9 @@ import {HttpModule, Http} from '@angular/http';
 
 @Component({
   selector: 'lazy-comp',
-  template: 'lazy!'
+  template: `
+  <div>lazy</div>
+  `
 })
 export class LazyComponent {}
 
@@ -12,8 +14,8 @@ export class LazyComponent {}
   imports: [
     RouterModule.forChild([
      {path: '', component: LazyComponent, pathMatch: 'full'},
-     {path: 'feature', loadChildren: './feature/feature.module#FeatureModule'},
-     {path: 'lazy-feature', loadChildren: './feature/lazy-feature.module#LazyFeatureModule'}
+     {path: 'feature', loadChildren: 'app/feature/feature.module#FeatureModule'},
+     {path: 'lazy-feature', loadChildren: 'app/feature/lazy-feature.module#LazyFeatureModule'}
     ]),
     HttpModule
   ],

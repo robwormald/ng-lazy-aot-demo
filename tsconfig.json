@@ -14,9 +14,7 @@
     "outDir": "lib"
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*"
   ],
-  "angularCompilerOptions": {
-    "genDir": "./src/ngfactory"
-  }
+  "angularCompilerOptions": {}
 }

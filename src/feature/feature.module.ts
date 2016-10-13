@@ -3,7 +3,7 @@ import {RouterModule} from '@angular/router';
 
 @Component({
   selector: 'feature-component',
-  template: 'foo.html'
+  template: 'feature component!'
 })
 export class FeatureComponent {}
 

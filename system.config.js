@@ -8,6 +8,7 @@ System.config({
   paths: {
     "npm:": "node_modules/",
   },
+  defaultJSExtensions: true,
   //map tells the System loader where to look for things
   map: {
 
@@ -25,9 +26,6 @@ System.config({
     },
     "app": {
       "main": "./main.aot.js",
-      "map": {
-        "./lazy.ngfactory.js": "./ngfactory/src/lazy.module.ngfactory.js"
-      },
       defaultExtension: "js"
     },
     "@angular/core": {

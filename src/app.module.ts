@@ -18,7 +18,7 @@ export class HomeView {}
   imports: [
     BrowserModule,
     RouterModule.forRoot([
-      {path: 'lazy', loadChildren: 'app/lazy#LazyModule'},
+      {path: 'lazy', loadChildren: 'app/lazy.module#LazyModule'},
       {path: '', component: HomeView}
     ])
   ],

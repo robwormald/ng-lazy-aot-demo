@@ -1,3 +1,6 @@
 /lib/
 /node_modules/
-/src/ngfactory/
+/src/**/*.ngfactory.ts
+/src/**/*.css.shim.ts
+/release/
+system.config.ngfactory.js
